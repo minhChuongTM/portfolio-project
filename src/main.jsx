@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter, RouterProvider } from "react-router";
 
+document.body.className = "default transition-colors duration-1000";
 createRoot(document.getElementById("root")).render(
     <StrictMode>
         <BrowserRouter>
