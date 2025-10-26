@@ -22,6 +22,7 @@ const socialNetwork = {
     iconLinkedIn: <FaLinkedin />,
     facebookLink: "https://www.facebook.com/chuongminh.669155/",
     iconFacebook: <FaFacebook />,
+    linkGg:"minhchuongit76@gmail.com",
     iconGooggle: <FaGoogle />,
 };
 const iconFullStackDev = {
@@ -44,7 +45,7 @@ const greeting = {
     title: "Hello 👋.",
     title2: "Minh Chuong",
     logo_name: "dev.Minh_Chuong()",
-    full_name: "Trinh Minh Chuong",
+    full_name: "Trinh Minh Chuong.",
     subTitle: "Backend Developer, Open Source Enthusiast 🔥. Always learning.",
     email: "minhchuongit76@gmail.com",
 };

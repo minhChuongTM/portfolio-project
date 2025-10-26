@@ -1,36 +1,41 @@
-import { useState } from "react";
-// import { NavLink } from "react-router";
-import { socialNetwork } from "../../portfolioData/PortfolioData.jsx";
 import NavItem from "./NavItem.jsx";
 import { NavLink } from "react-router";
-
+import { ThemeContext } from "@/providers/ThemeProvider.jsx";
+import { useContext } from "react";
 function Header() {
-    const [isDark, setIsDark] = useState(false);
-    const toggleTheme = () => {
-        setIsDark(!isDark);
-        !isDark ? (document.body.style.background = "black") : (document.body.style.background = "white");
-        !isDark ? document.body.classList.add("text-white") : document.body.classList.remove("text-white");
-    };
-
-    document.querySelectorAll("NavLink").className = "p-4";
+    const { theme, toggleTheme } = useContext(ThemeContext);
+    const isDark = theme !== "light";
 
     return (
         <div className={"flex justify-between font-Montserrat-Alternates font-medium items-center mt-2"}>
             <div className={"navbar flex items-center h-15"}>
-                <NavLink to={"/"} className={""}>
+                <NavLink
+                    to={"/"}
+                    className={
+                        isDark
+                            ? "transition-colors duration-300 text-white"
+                            : "transition-colors duration-300 text-gray-800"
+                    }
+                >
                     Logo
                 </NavLink>
             </div>
             <div className="navbar flex gap-6 items-center h-15">
-                <NavItem to={"/"} className={"hover:bg-amber-600 shadow-amber-200 p-4 rounded-2xl"}>
+                <NavItem isDark={isDark} to={"/"} className={"hover:bg-amber-600 shadow-amber-200 p-4 rounded-2xl"}>
                     Home
                 </NavItem>
-                <NavItem to={"project"} className={"p-4"}>
+                <NavItem isDark={isDark} to={"project"} className={"p-4"}>
                     Project
                 </NavItem>
-                <NavItem to={"experience"}>Experience</NavItem>
-                <NavItem to={"about"}>About</NavItem>
-                <NavItem to={"contact"}>Contact</NavItem>
+                <NavItem isDark={isDark} to={"experience"}>
+                    Experience
+                </NavItem>
+                <NavItem isDark={isDark} to={"about"}>
+                    About
+                </NavItem>
+                <NavItem isDark={isDark} to={"contact"}>
+                    Contact
+                </NavItem>
                 {/* Toggle Button */}
                 <button
                     onClick={toggleTheme}

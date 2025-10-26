@@ -4,6 +4,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.add{
+    color: #878c96 ;
+    color: #1f2937;
+}
+
 .default {
     max-width: 1429px;
     width: 100%;
@@ -13,9 +18,14 @@
     --font-Fira-Sans: "Fira Sans";
     --font-Noto-Sans-Display: "Noto Sans Display";
     --font-Montserrat-Alternates: "Montserrat Alternates";
-    
-    --color-bg-orange: #EB6559;
-    --color-sd-orange: #EB6559;
+
+    --color-bg-orange: #eb6559;
+    --color-sd-orange: #eb6559;
+    --color-redM: #fc1056;
+    --color-text-redGg: #ea4335;
+    --color-cyanM: #0e76a8;
+    --color-blue1: #1da1f2;
+
 }
 
 @theme inline {
@@ -126,10 +136,10 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+    body {
+        @apply bg-background text-foreground;
     }
 }

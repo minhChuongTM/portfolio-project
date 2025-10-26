@@ -1,9 +1,13 @@
-import React from 'react'
+import GreetingCp from "@/components/ContentComponents/GreetingCp";
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
+    const textColor = "text-gray-700 dark:text-gray-300";
+    // console.log(textColor);
+    return (
+        <div className="">
+            <GreetingCp textColor={textColor} />
+        </div>
+    );
 }
 
-export default Home
+export default Home;
