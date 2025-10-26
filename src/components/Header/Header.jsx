@@ -1,4 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+// import { NavLink } from "react-router";
+import { socialNetwork } from "../../portfolioData/PortfolioData.jsx";
+import NavItem from "./NavItem.jsx";
 import { NavLink } from "react-router";
 
 function Header() {
@@ -9,22 +12,25 @@ function Header() {
         !isDark ? document.body.classList.add("text-white") : document.body.classList.remove("text-white");
     };
 
-    useEffect(() => {});
+    document.querySelectorAll("NavLink").className = "p-4";
+
     return (
-        <div className={"flex justify-between font-Montserrat-Alternates font-medium items-center"}>
+        <div className={"flex justify-between font-Montserrat-Alternates font-medium items-center mt-2"}>
             <div className={"navbar flex items-center h-15"}>
                 <NavLink to={"/"} className={""}>
                     Logo
                 </NavLink>
             </div>
             <div className="navbar flex gap-6 items-center h-15">
-                <NavLink to={"/"} className={"hover:bg-amber-600 shadow-amber-200"}>
+                <NavItem to={"/"} className={"hover:bg-amber-600 shadow-amber-200 p-4 rounded-2xl"}>
                     Home
-                </NavLink>
-                <NavLink to={"project"}>Project</NavLink>
-                <NavLink to={"experience"}>Experience</NavLink>
-                <NavLink to={"about"}>About</NavLink>
-                <NavLink to={"contact"}>Contact</NavLink>
+                </NavItem>
+                <NavItem to={"project"} className={"p-4"}>
+                    Project
+                </NavItem>
+                <NavItem to={"experience"}>Experience</NavItem>
+                <NavItem to={"about"}>About</NavItem>
+                <NavItem to={"contact"}>Contact</NavItem>
                 {/* Toggle Button */}
                 <button
                     onClick={toggleTheme}
@@ -33,7 +39,7 @@ function Header() {
                     }`}
                 >
                     <span
-                        className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center `}
+                        className={`absolute top-1 left-1  w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center `}
                     >
                         {isDark ? (
                             <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">

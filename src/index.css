@@ -13,6 +13,9 @@
     --font-Fira-Sans: "Fira Sans";
     --font-Noto-Sans-Display: "Noto Sans Display";
     --font-Montserrat-Alternates: "Montserrat Alternates";
+    
+    --color-bg-orange: #EB6559;
+    --color-sd-orange: #EB6559;
 }
 
 @theme inline {
