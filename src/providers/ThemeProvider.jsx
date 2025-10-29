@@ -11,7 +11,7 @@ export const ThemeProvider = ({ children }) => {
     };
 
     // const bgWhite = "radial-gradient(125% 125% at 50% 10%, #fff 40%, #6366f1 100%)";
-    const bgBlack = "radial-gradient(125% 125% at 50% 10%, #000000 40%, #350136 100%)";
+    const bgBlack = "radial-gradient(circle 500px at 50% 300px, rgba(16,185,129,0.35), transparent)";
     const bgWhiteImgase = `radial-gradient(circle at top left,rgba(70, 130, 180, 0.5),transparent 30%)`;
     return (
         <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>

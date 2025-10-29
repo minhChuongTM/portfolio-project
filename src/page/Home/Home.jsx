@@ -1,4 +1,5 @@
-import GreetingCp from "@/components/ContentComponents/GreetingCp";
+import FullStackDev from "@/components/ContentComponents/Home/FullStackDev";
+import GreetingCp from "@/components/ContentComponents/Home/GreetingCp";
 
 function Home() {
     const textColor = "text-gray-700 dark:text-gray-300";
@@ -6,6 +7,7 @@ function Home() {
     return (
         <div className="">
             <GreetingCp textColor={textColor} />
+            <FullStackDev textColor={textColor} />
         </div>
     );
 }
