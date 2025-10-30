@@ -1,3 +1,4 @@
+import CloudInfra from "@/components/ContentComponents/Home/CloudInfra";
 import FullStackDev from "@/components/ContentComponents/Home/FullStackDev";
 import GreetingCp from "@/components/ContentComponents/Home/GreetingCp";
 
@@ -8,6 +9,7 @@ function Home() {
         <div className="">
             <GreetingCp textColor={textColor} />
             <FullStackDev textColor={textColor} />
+            <CloudInfra textColor={textColor} />
         </div>
     );
 }

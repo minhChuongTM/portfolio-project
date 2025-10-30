@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
     return (
-        <div className=" fixed bottom-0 left-0 w-full p-4 text-center font-Montserrat-Alternates font-medium">
-            sfdffe
+        <div className="bottom-0 left-0 w-full pt-20 pb-4 text-center font-Montserrat-Alternates font-bold">
+            Made with ❤️ by Minh Chương
         </div>
     );
 }

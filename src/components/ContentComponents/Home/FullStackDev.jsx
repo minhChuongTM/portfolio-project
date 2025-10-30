@@ -1,13 +1,19 @@
-import { iconFullStackDev } from "@/portfolioData/PortfolioData.jsx";
+import { fullStackDev, iconFullStackDev } from "@/portfolioData/PortfolioData.jsx";
 import React from "react";
 
 function FullStackDev({ textColor }) {
+    const [firstItem] = fullStackDev.data.slice(0);
+    // const item = firstItem.skills.map((skill,i)=>{
+    //     skill, i;
+    // });
+    // console.log(item);
+
     return (
-        <div className={` grid grid-cols-2 gap-6 ${textColor} transition-colors duration-300 pt-4`}>
+        <div className={` grid lg:grid-cols-2 gap-6 ${textColor} transition-colors duration-300 pt-4`}>
             <div className="">
                 <svg
                     id="ade8c9af-7e2e-4eda-b5c8-b06129257226"
-                    width="100%"
+                    width="80%"
                     height="100%"
                     viewBox="0 0 1076.06371 755.2279"
                 >
@@ -190,8 +196,8 @@ function FullStackDev({ textColor }) {
                 </svg>
             </div>
             <div className="text-center">
-                <h2 className="font-Montserrat-Alternates font-bold text-4xl w-full">{iconFullStackDev.title}</h2>
-                <div className="grid grid-cols-8 gap-4 text-7xl pt-6 text-center">
+                <h2 className="font-Fira-Sans font-bold text-4xl w-full">{iconFullStackDev.title}</h2>
+                <div className="grid grid-cols-8 gap-4 text-7xl pt-6">
                     <div className="text-amber-600">{iconFullStackDev.iconHTML}</div>
                     <div className=" text-blue1">{iconFullStackDev.iconCss}</div>
                     <div className=" text-yellow-500">{iconFullStackDev.iconJs}</div>
@@ -202,9 +208,13 @@ function FullStackDev({ textColor }) {
                     <div className=" text-cyan-500">{iconFullStackDev.iconMySQL}</div>
                     <div className=" text-cyan-500">{iconFullStackDev.iconMongoDB}</div>
                     <div className=" text-cyan-500">{iconFullStackDev.iconGit}</div>
-                    <div className=" text-cyan-500">{iconFullStackDev.iconDocker}</div>
-                    <div className=" text-cyan-500">{iconFullStackDev.iconSQLServer}</div>
-                    <div className=" text-cyan-500">{iconFullStackDev.iconGitAcction}</div>
+                </div>
+                <div className="pt-6">
+                    <ul className="list-none text-start leading-10 text-xl font-Fira-Sans font-normal">
+                        {firstItem.skills.map((skill, i) => (
+                            <li key={i}>{skill}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>
