@@ -13,7 +13,6 @@ import {
 import { PiFileCSharpBold } from "react-icons/pi";
 import { SiDocker, SiGit, SiGithubactions, SiMongodb, SiMysql } from "react-icons/si";
 import { DiPostgresql } from "react-icons/di";
-
 //Data home page
 const socialNetwork = {
     githupLink: "https://github.com/minhChuongTM",
@@ -22,7 +21,7 @@ const socialNetwork = {
     iconLinkedIn: <FaLinkedin />,
     facebookLink: "https://www.facebook.com/chuongminh.669155/",
     iconFacebook: <FaFacebook />,
-    linkGg:"minhchuongit76@gmail.com",
+    linkGg: "minhchuongit76@gmail.com",
     iconGooggle: <FaGoogle />,
 };
 const iconFullStackDev = {
@@ -88,6 +87,7 @@ const degreesReceived = {
             title1: "Shantilal Shah Engineering College",
             title2: "Bachelor in Information Technology",
             year: "2025 - 2026",
+            image: "bauddhikgeeks.png",
             descriptions: [
                 "⚡ I have studied core subjects like Machine Learning, Computer Vision, Advanced Web Development.",
                 "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course.",
@@ -98,6 +98,7 @@ const degreesReceived = {
             title1: "Shantilal Shah Engineering College",
             title2: "Bachelor in Information Technology",
             year: "2026 - 2027",
+            image: "bauddhikgeeks.png",
             descriptions: [
                 "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
                 "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
@@ -107,6 +108,57 @@ const degreesReceived = {
         },
     ],
 };
+const certifications = [
+    {
+        title: "M0001: MongoDB Basics",
+        subtitle: "MongoDB University",
+        logo_path: "mongo.png",
+        alt_name: "MongoDB University",
+        color_code: "#47A048",
+    },
+    {
+        title: "Hackathon",
+        subtitle: "Hack The Mountains",
+        logo_path: "hackathon1.svg",
+        alt_name: "hackathon",
+        color_code: "#E2405F",
+    },
+    {
+        title: "A300: Atlas Security",
+        subtitle: "MongoDB University",
+        logo_path: "mongo.png",
+        alt_name: "MongoDB University",
+        color_code: "#47A048",
+    },
+    {
+        title: "Cyber Security & Cyber Forensics",
+        subtitle: "Workshop at IIT Bombay",
+        logo_path: "iit.png",
+        alt_name: "Workshop",
+        color_code: "#2AAFED",
+    },
+    {
+        title: "MLH Local Hack Day: Build",
+        subtitle: "Major League Hacking",
+        logo_path: "mlh-logo.svg",
+        alt_name: "Google",
+        color_code: "#fe0037",
+    },
+    {
+        title: "Hack20",
+        subtitle: "Flutter International Hackathon",
+        logo_path: "flutter.png",
+        alt_name: "Flutter International Hackathon",
+        color_code: "#2AAFED",
+    },
+    {
+        title: "Postman Student Expert",
+        subtitle: "Postman",
+        logo_path: "postman.png",
+        alt_name: "Postman",
+        color_code: "#fffbf3",
+    },
+];
 //expereine page
 const experience = {
     title: "Experience",
@@ -638,4 +690,5 @@ export {
     projectsHeader,
     projects,
     contactPageData,
+    certifications,
 };

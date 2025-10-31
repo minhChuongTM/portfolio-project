@@ -53,9 +53,13 @@ function GreetingCp({ textColor }) {
                     </div>
                 </div>
                 <div className="mt-8">
-                    <Link className="bg-redM text-center pl-10 pr-10 pt-3 pb-3 rounded-3xl font-Noto-Sans-Display font-medium hover:bg-red-600 text-white">
+                    <Link
+                        to={"contact"}
+                        className="bg-redM text-center pl-10 pr-10 pt-3 pb-3 rounded-3xl font-Noto-Sans-Display font-medium hover:bg-red-600 text-white"
+                    >
                         Contact Me
                     </Link>
+                    
                 </div>
             </div>
             <div className="greeting-image-div">

@@ -22,11 +22,7 @@ function Education() {
                             y2="2729.34772"
                             gradientTransform="translate(3217.53309 1009.65784) rotate(90)"
                             gradientUnits="userSpaceOnUse"
-                        >
-                            <stop offset="0" stop-color="gray" stop-opacity="0.25"></stop>
-                            <stop offset="0.53514" stop-color="gray" stop-opacity="0.12"></stop>
-                            <stop offset="1" stop-color="gray" stop-opacity="0.1"></stop>
-                        </linearGradient>
+                        ></linearGradient>
                     </defs>
                     <title></title>
                     <ellipse
@@ -213,7 +209,7 @@ function Education() {
             </div>
             <div className="flex items-center justify-center">
                 <div className="">
-                    <h1 className="font-bold text-5xl">{educationPage.title1}</h1>
+                    <h1 className="font-bold text-6xl">{educationPage.title1}</h1>
                     <h2 className="font-medium text-3xl pt-4">{educationPage.title2}</h2>
                     <p className="pt-4 text-xl">{educationPage.descriptions}</p>
                 </div>
