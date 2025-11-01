@@ -11,7 +11,7 @@ function Certifications() {
             <div className="grid md:grid-cols-12 gap-6 pt-6">
                 {array.map((item, i) => (
                     <div key={i} className="col-span-4">
-                        <Card className={""}>
+                        <Card className={"hover:shadow-lg shadow-red-500 transition duration-300"}>
                             <div
                                 style={{ backgroundColor: item.color_code }}
                                 className="p-4 flex justify-center items-center"
