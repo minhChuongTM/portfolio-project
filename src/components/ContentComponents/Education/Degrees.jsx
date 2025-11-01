@@ -12,7 +12,7 @@ function Degrees() {
             {datas.data.map((item, i) => (
                 <div key={i} className="grid md:grid-cols-12 gap-12 pt-6 text-xl">
                     <div className="col-span-2 flex items-center">
-                        <div className="border-2 border-red-600 rounded-full hover:shadow-2xl shadow-red-400/50 transition duration-300">
+                        <div className="border-2 border-red-600 rounded-full hover:shadow-lg shadow-red-400/50 transition duration-300">
                             <img
                                 src={new URL(`../../../assets/images/${item.image}`, import.meta.url).href}
                                 alt="degree demo"
@@ -22,7 +22,7 @@ function Degrees() {
                         </div>
                     </div>
                     <div className="col-span-10">
-                        <Card className={"hover:shadow-2xl shadow-red-400/50 transition duration-300"}>
+                        <Card className={"hover:shadow-lg hover:shadow-red-400/100 transition duration-300"}>
                             <CardHeader
                                 className={"bg-red-500 flex justify-between items-center text-white p-4 leading-12"}
                             >
